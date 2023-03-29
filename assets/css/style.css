@@ -1,0 +1,264 @@
+@font-face {
+    font-family: Work;
+    src: url("../fonts/WorkSans-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Didact;
+    src: url("../fonts/DidactGothic-Regular.ttf");
+}
+
+@font-face {
+    font-family: Fjalla;
+    src: url("../fonts/FjallaOne-Regular.ttf");
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Fonts */
+
+header {
+    text-align: center;
+    padding: 20px 0 60px 0;
+    font-family: "Didact";
+    font-size: 15px;
+    color: black;
+}
+
+/* Seite 1 */
+
+.Sec1 {
+    text-align: center;
+}
+
+.Sec1 h1 {
+    color: black;
+}
+
+.Sec1 p {
+    font-family: "Work";
+    font-size: 160px;
+    margin-bottom: 150px;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: "Didact";
+    font-weight: 400;
+    color: white;
+}
+
+/* Seite 2 */
+.Sec2 {
+    background-image: url("../img/portfolio2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 220px
+}
+
+.Sec2 p {
+    color: #9e9e9e;
+}
+
+/* Seite 3 */
+.Sec3 {
+    background-image: url("../img/portfolio3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 220px
+}
+
+.Sec3 h1 {
+    color: black;
+}
+
+.Sec3 a {
+    color: black;
+}
+.Sec3 h3 {
+    color: black;
+}
+
+/* Seite 4 */
+.Sec4 {
+    background-image: url("../img/portfolio4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 220px
+}
+
+.Sec4 p {
+    color: #9e9e9e;
+}
+
+.Sec4 p {
+    color: #9e9e9e;
+}
+
+/* Seite 5 */
+.Sec5 {
+    background-image: url("../img/portfolio5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding-left: 220px
+}
+
+.Sec5 a {
+    color: black;
+}
+
+.Sec5 h1 {
+    color: black;
+}
+
+.Sec5 h3 {
+    color: black;
+}
+
+/* Seite 6 */
+.Sec6 {
+    font-family: "Work";
+    background: black;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.Sec6 h1 {
+    font-size: 180px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.Sec6 p {
+    color: #9e9e9e;
+    font-size: 22px;
+    line-height: 40px;
+    display: block;
+    padding-left: 640px;
+    margin-bottom: 70px;
+}
+
+.Sec6 a {
+    font-size: 60px;
+    text-decoration: none;
+    color: white;
+    padding-left: 640px;
+}
+
+.Sec6 a:hover {
+    text-decoration: underline;
+}
+
+/* Seite 7 */
+.Sec7 {
+    font-family: "Didact";
+    font-size: 160px;
+    font-weight: 400;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    text-align: center;
+    padding-top: 230px;
+    margin-bottom: 230px;
+}
+
+.Sec7 a {
+    color: black;
+    text-decoration: none;
+    line-height: 210px;
+}
+
+.Sec7 a:hover {
+    text-decoration: underline;
+}
+
+/* Classes */
+.site {
+    font-family: "Fjalla";
+    font-style: normal;
+    font-size: 165px;
+    font-weight: 400;
+    text-align: right;
+    color: #9e9e9e;
+    letter-spacing: -0.02em;
+    padding: 25px 120px 100px 0;
+}
+
+.image {
+    background: url("../img/portfolio1.jpeg") no-repeat center;
+    height: 1080px;
+    width: 720px;
+    display: block;
+    margin: auto; 
+}
+
+.Jahr {
+    font-family: "Work";
+    font-size: 20px;
+    font-weight: 400;
+    color: #9e9e9e;
+    padding: 150px 0 40px 0;
+}
+
+.Abstand {
+    margin-bottom: 160px;
+}
+
+.Dive {
+    font-family: "Fjalla";
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    border: 2px solid lightgray;
+    color: white;
+    display: inline-block;
+    padding: 16px 26px;
+}
+
+/* Hover Effekt Button */
+.Dive:hover {
+    background: white;
+    color: black;
+}
+.Dive:hover + .site{
+    color: white;
+}
+
+/* Herz */
+@keyframes pulse {
+0% {
+    transform: scale(1); 
+}
+50% {
+    transform: scale(2);
+}
+100% {
+    transform: scale(1);
+}
+}
+
+.footer {
+    padding: 10% 0;
+
+}
+
+.heart {
+    display: block;
+    margin:auto;
+    background-image: url("../img/Design_ohne_Titel-removebg-preview.png");
+    width: 2rem;
+    height: 2rem;
+    background-size: cover;
+    animation: pulse 2s infinite;
+}
